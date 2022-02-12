@@ -45,7 +45,7 @@ const Table = () => {
         .then(data => setPositions(data))
         .finally(setHighestSalaries([]))
     } else {
-      fetch(`https://hallo015employees.herokuapp.com/${query}`)
+      fetch(`https://hallo015employees.herokuapp.com/highest/${query}`)
         .then(response => response.json())
         .then(data => setHighestSalaries(data))
     }
